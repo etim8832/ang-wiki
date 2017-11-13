@@ -4,22 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
-// import {routing} from './app.routing';
+import {routing} from './app.routing';
 import { Routes, RouterModule } from '@angular/router';
+import { PageListComponent } from './pages/page-list/page-list.component';
 
-const appRoutes:Routes =[
-  {path:"page", component:HeaderComponent}
 
-]
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    PageListComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    routing
    
   ],
   providers: [],
